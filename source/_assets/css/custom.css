@@ -1,0 +1,34 @@
+.sd-card {
+  background-color: rgba(200, 200, 200, 0.125);
+  border: 3px solid rgba(200, 200, 200, 0.25);
+}
+
+/* .sd-card-title { */
+  /* font-size: 110%; */
+  /* text-decoration: underline; */
+/* } */
+
+.sd-card p {
+  font-size: 90%;
+  margin: 0px;
+}
+
+.sd-card-body{
+  padding: 12px;
+}
+
+.sd-card-body ul.simple {
+  font-size: 80%;
+  margin: 0px;
+  line-height: 1.2;
+}
+
+.theme-toggle svg {
+    height: 1.5rem;
+    width: 1.5rem;
+	}
+
+.content-icon-container {
+    margin-top: 3.5;
+}
+
