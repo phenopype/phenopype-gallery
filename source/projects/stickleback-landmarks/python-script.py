@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Jupyter notebook: counting  isopods
+# # Jupyter notebook: place landmarks on stickleback
 
 # First, if you haven't already done so, download the images and unzip them to the same folder as this notebook. Then import phenopype and assign some directoy and file names: 
 
@@ -16,19 +16,24 @@ image_dir = "images"                   ## folder with images
 template = "template-config.yaml"      ## image processing instructions
 
 
-# Now, create a phenopype project, and add images and config:
-
-# In[2]:
-
-
-proj = pp.Project(root_dir)
-
-
 # In[3]:
 
 
-proj.add_files(image_dir = image_dir)
-proj.add_config(template_path=template, tag="v1")
+proj = pp.Project(project_name)
+
+
+# In[5]:
+
+
+## add all stickleback-images from the data folder, but exclude the two that don't belong to the series 
+proj.add_files(image_dir = image_dir, include="stickle", exclude=["side","top"])
+
+
+# In[6]:
+
+
+## add the config template; provide a tag
+proj.add_config(template_path=template_path, tag="v1", overwrite=True)
 
 
 # Add a project-wide size and color reference that will be detected in the images:
@@ -41,51 +46,34 @@ proj.add_config(template_path=template, tag="v1")
 # </div>
 # </center>
 
-# In[4]:
+# In[8]:
 
 
 ## set the project-wide reference. the reference has its own tag, in case your project uses multiple reference cards
-proj.add_reference(reference_image_path=os.path.join(image_dir,"isopods1.jpg"), reference_tag="iso-scale")
+proj.add_reference(reference_image_path= os.path.join(image_dir,"stickleback_side.jpg"), reference_tag="stickle-scale")
 
 
-# Finally, loop through the images of the project with the `Pype` class. First, create a mask around all specimens, then edit any errors to the contours if necessary:
+# Finally, loop through the images of the project with the `Pype` class and place the landmarks. You can modify, for instance, point size and colour for the landmarks while adding them (or before adding the template). Note that point characteristics need to be changed separately for setting the landmarks and visualizing them (this goes for all GUI-annotations like masks, lines, etc.).
 # 
 # <center>
 # <div style="width:600px; text-align: left">
 #     
-# ![](_assets/draw-mask.gif)
-#         
+# ![](_assets/place-landmarks.gif)
+#     
 # </div>
 # </center>
 
-# In[5]:
+# In[9]:
 
 
+## run image processing
 for path in proj.dir_paths:
     pp.Pype(path, tag="v1")
 
 
-# Some comments on the settings: changing `blocksize` and `constant` on the threshold algorithm has a great effect on the result. This becomes evident when looking at the binarized image, which shows increasing blocksizes. You can inspect the binary images yourself by selecting `canvas: mod` in `- select_canvas`
-# 
-# <center>
-# <div style="width:600px; text-align: left">
-#     
-# ![](_assets/thresholding.jpg)
-#     
-# </div>
-# </center>
-
-# Once you're done, collect the results 
-
-# In[6]:
+# In[10]:
 
 
 ## collect results and store in folder "<project-root>/results/annotations"
 proj.collect_results("v1", "annotations", "annotations")
-
-
-# In[ ]:
-
-
-
 

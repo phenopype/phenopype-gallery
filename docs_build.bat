@@ -11,6 +11,10 @@ if "%*"=="-d" (
 
 sphinx-build -a source docs 
 
+if "%*"=="-p" (
+	python deploy.py
+)
+
 if "%*"=="-o" (
 	cd docs
 	rmdir ".git" /S /Q

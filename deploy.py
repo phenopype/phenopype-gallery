@@ -10,9 +10,8 @@ Created on Sat Oct 28 11:30:05 2023
 import os
 import sys
 import zipfile
-import jupyter 
-
-# import nbconvert
+import nbformat
+from nbconvert import PythonExporter
 
 ## change to current dir
 if hasattr(sys, 'ps1'):
@@ -20,11 +19,7 @@ if hasattr(sys, 'ps1'):
 else:
     os.chdir(sys.path[0])
     
-
-
-import nbformat
-from nbconvert import PythonExporter
-
+## convert notebook to python script
 def convertNotebook(notebookPath, modulePath):
 
   with open(notebookPath) as fh:
@@ -38,6 +33,8 @@ def convertNotebook(notebookPath, modulePath):
 
 #%% create zips
 
+print("converting ipynb to py:\n")
+
 project_dir = r"source/projects"
 
 for project in os.listdir(project_dir):
@@ -45,8 +42,8 @@ for project in os.listdir(project_dir):
     if os.path.isdir(project_path):
         print(project)
 
-        path1 = os.path.join(project_path, project + ".ipynb")
-        path2 = os.path.join(project_path, project + ".py")
+        path1 = os.path.join(project_path, "jupyter-notebook.ipynb")
+        path2 = os.path.join(project_path, "python-script.py")
     
         convertNotebook(path1, path2)
 

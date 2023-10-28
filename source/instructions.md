@@ -1,3 +1,4 @@
+(instructions)=
 # Instructions
 
 Check out the projects below to get a feeling for which sort of image analysis problems can be tackled with phenopype: either run the code yourself (follow the provided instructions) or just check out the read only html version of the notebooks. If you found a bug in the package or any of these materials, please `raise an issue <https://github.com/phenopype/phenopype/issues>`_ in the main phenopype repo on GitHub.

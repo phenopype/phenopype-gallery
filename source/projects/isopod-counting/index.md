@@ -11,23 +11,36 @@ In this project the goal is to measure measure phenotypic distributions of multi
 
 ## Get started
 
-1. Read the [introduction](introduction) 
-2. Inspect a rendered copy of a [jupyter notebook](isopod-counting)
-3. Download the files to run the project on your local machine
+1. Read the [introduction](introduction) to this project
+2. Inspect a static html version of a [jupyter notebook](jupyter-notebook)
+3. Download the files (see below) and run the scripts (see [instructions](../../instructions))
 
 ## Downloads
 
-::::{grid} 3
+::::{grid} 2
 :gutter: 2
 
-:::{grid-item-card} Project
-All files
-```{button-link} https://files.de-1.osf.io/v1/resources/rxubv/providers/osfstorage/65394dd4282745120cb86bcc/?zip=
+:::{grid-item-card} Scripts
+Download the notebook or python script, and the template
++++
+```{button-link} https://github.com/phenopype/phenopype-gallery/tree/main/source/projects/isopod-counting
 :color: primary
 :outline:
 :expand:
 
-Download 
+Download
+```
+:::
+
+:::{grid-item-card} Data
+Images for this project
++++
+```{button-link} https://files.de-1.osf.io/v1/resources/rxubv/providers/osfstorage/653cf4e48a28b11611ffc89c/?zip=
+:color: primary
+:outline:
+:expand:
+
+Download
 ```
 :::
 
@@ -36,6 +49,6 @@ Download
 ```{toctree}
 :hidden:
 introduction
-Jupyter notebook <isopod-counting>
+Jupyter notebook <jupyter-notebook>
 ```
 
