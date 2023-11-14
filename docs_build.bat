@@ -9,11 +9,23 @@ if "%*"=="-d" (
 	rmdir /Q /S docs
 )
 
-sphinx-build -a source docs 
-
-if "%*"=="-p" (
-	python deploy.py
+if "%*"=="-p1" (
+	python deploy.py --find-notebooks True
 )
+
+if "%*"=="-p2" (
+	python deploy.py --find-notebooks True --compile-zips True
+)
+
+if "%*"=="-p3" (
+	python deploy.py --find-notebooks True --upload-gdrive True
+)
+
+if "%*"=="-p4" (
+	python deploy.py --find-notebooks True --upload-gdrive-ow True
+)
+
+sphinx-build -a source docs 
 
 if "%*"=="-o" (
 	cd docs
