@@ -39,20 +39,8 @@ Read a static html render of a jupyter notebook
 ::::{grid} 3
 :gutter: 2
 
-:::{grid-item-card} Scripts
-Download the notebook or python script, and the template
-+++
-```{button-link} https://github.com/phenopype/phenopype-gallery/tree/main/source/projects/stickleback-landmarks
-:color: primary
-:outline:
-:expand:
-
-Download
-```
-:::
-
-:::{grid-item-card} Data
-Images for this project
+:::{grid-item-card} Project materials
+Download data, scripts, and template
 +++
 ```{button-link} https://osf.io/download/jdmu6/
 :color: primary
@@ -64,6 +52,7 @@ Download
 :::
 
 ::::
+
 
 ```{toctree}
 :hidden:

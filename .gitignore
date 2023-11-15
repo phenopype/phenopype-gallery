@@ -2,15 +2,12 @@
 _temp
 docs
 .local
+*jupyter_execute
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-*jupyter_execute
-**data
-**images
-**phenopype
-*zip
 
 # C extensions
 *.so
