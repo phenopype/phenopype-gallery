@@ -14,7 +14,7 @@ In this project the goal is to measure measure phenotypic distributions of sever
 
 This workflow was used for a master's project where we quickly needed to measure the phenotypic distribution (pigmentation as gray scale, and size) before adding multiple batches of live isopods to a predation experiment. Since the isopods were alive and were needed for the experiment, we didn't use a macro-lens but the default wide angle lens.
 
-```{image} camera_stand.jpg
+```{image} ../_assets/images/camera_stand.jpg
 :width: 500px
 :align: center
 ```
@@ -40,10 +40,10 @@ Read a static html render of a jupyter notebook
 ::::{grid} 3
 :gutter: 2
 
-:::{grid-item-card} Scripts
-Download the notebook or python script, and the template
+:::{grid-item-card} Project materials
+Download data, scripts, and template
 +++
-```{button-link} https://github.com/phenopype/phenopype-gallery/tree/main/source/projects/stickleback-landmarks
+```{button-link} https://osf.io/download/wrm84/
 :color: primary
 :outline:
 :expand:
@@ -51,19 +51,6 @@ Download the notebook or python script, and the template
 Download
 ```
 :::
-
-:::{grid-item-card} Data
-Images for this project
-+++
-```{button-link} https://files.de-1.osf.io/v1/resources/rxubv/providers/osfstorage/653d069f87852d16e5a59543/?zip=
-:color: primary
-:outline:
-:expand:
-
-Download
-```
-:::
-
 ::::
 
 ```{toctree}

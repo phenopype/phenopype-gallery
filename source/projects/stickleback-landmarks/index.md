@@ -21,6 +21,14 @@ Functional morphology of organisms is often measured by placing landmarks at spe
 
 Details about the imaging gear and protocol can be found a [blog entry on my personal website](https://www.luerig.net/posts/high-throughput-imaging/#1---camera-stand-suitable-for-live-organisms). We photographed the isopods on a camera stand using a computer controlled Canon EOS 750d DLSR with a 15-45mm lens and LED light panels for better illumination. Imaging each fish took about 30 seconds (including handling time), processing in phenopype up to 60 seconds per image.
 
+```{figure} hudson-et-al_SI_landmarks.jpg
+:width: 500px
+:align: center
+
+**Landmark locations for lateral photographs of stained adult stickleback (see Table S1. in Hudson et al. 2023 for details)**
+```
+
+
 ## Jupyter notebooks
 
 ::::{grid} 3
