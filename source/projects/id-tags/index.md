@@ -17,7 +17,7 @@ Many field ecologists rely on simply handwritten or computer-printed labels to a
 :width: 600px
 :align: center
 
-**ID tags are essential for quantitative reproducible research that is based on images! This is also much safer than, for example, including the ID in the image name or a table, but it can be quite a bit of work to transfer that information into a database.**
+**ID tags inside a picture are essential for quantitative reproducible research!**
 ```
 
 Given the time for implementation, and that there is always a small margin for error in even the best OCR pipelines, so images would have to be checked manually anyways, phenopype provide a simple solution: minimal interactivity, fast switching of images, and printing the output onto the original image. Experience has shown that even rather large datasets (~15000 images) can be labeled in a few hours or days, reducing the possibility for error to a minimum. 

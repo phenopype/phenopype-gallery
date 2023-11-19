@@ -29,7 +29,9 @@ These are single-tooth images from sediment cores that were photographed under t
 
 **Multiple teeth are dislocated from a cichlid jaw to be imaged and used for a reference  database of tooth traits.**
 ```
-For the multi-tooth case, we can use the thresholding algorithm on the red channel, which has very good contrast against the black background. Detecting the scale reference is challenging for both the single- and multi-tooth case. In the single tooth case, I was successful with a configuration that picks up the completely black rectangle containing the scale:
+For the multi-tooth case, we can best use the adaptive thresholding algorithm, applied on the red channel where the teeth, which have a red tip, will occurr as all-white against a black background. This will lead to solid segmentation results. 
+
+Detecting the scale reference is a bit more challenging, for both the single- and multi-tooth case. In the single tooth case, I was successful with a configuration that picks up the completely black rectangle containing the scale:
 
 ```
 ## detect reference (single tooth case) 
@@ -77,7 +79,7 @@ Read a static html render of a jupyter notebook
 :::{grid-item-card} Project materials
 Download data, scripts, and template
 +++
-```{button-link} https://osf.io/download/gakh3/
+```{button-link} https://osf.io/download/pur3g/
 :color: primary
 :outline:
 :expand:

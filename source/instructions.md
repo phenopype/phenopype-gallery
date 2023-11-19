@@ -1,12 +1,14 @@
-(instructions)=
 # Instructions
 
-Check out the projects below to get a feeling for which sort of image analysis problems can be tackled with phenopype: either run the code yourself (follow the provided instructions) or just check out the read only html version of the notebooks. If you found a bug in the package or any of these materials, please raise an [issue](https://github.com/phenopype/phenopype/issues) in the main phenopype repo on GitHub.
+## Global instructions
 
-## Gallery (read-only)
+1. Install phenopype (see [installation instructions](https://www.phenopype.org/docs/installation/))
+2. Install jupyter: `pip install jupyter notebook`
+3. start the jupyter notebook server with `jupyter notebook`
 
-Below are the read-only html versions of the code contained in the notebooks - to run them yourself, follow the above instructions. If you want to use the notebooks as a blueprint for your own project, you can also save them as a Python script from a running jupyter notebook using :code:`File > Download as > Python (.py)`.
+## Project specific instructions
 
-
-```{include} projects/_assets/md/make-pp-project.md
-```
+4. Go to a project and read through the static copy of the jupyter notebook 
+5. Download the materials (data, jupyter notebook, Python script, phenopype templates, etc.) and unpack the archive
+6. (optional) check if any extra libraries or packages (e.g., for phenopype plugins) need to be installed.
+7. Open the downloaded notebook from the notebook server (3.), and follow the instructions

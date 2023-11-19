@@ -19,7 +19,9 @@ Functional morphology of organisms is often measured by placing landmarks at spe
 :align: center
 ```
 
-Details about the imaging gear and protocol can be found a [blog entry on my personal website](https://www.luerig.net/posts/high-throughput-imaging/#1---camera-stand-suitable-for-live-organisms). We photographed the isopods on a camera stand using a computer controlled Canon EOS 750d DLSR with a 15-45mm lens and LED light panels for better illumination. Imaging each fish took about 30 seconds (including handling time), processing in phenopype up to 60 seconds per image.
+Details about the imaging gear and protocol can be found a [blog entry on my personal website](https://www.luerig.net/posts/high-throughput-imaging/#1---camera-stand-suitable-for-live-organisms). We photographed the isopods on a camera stand using a computer controlled Canon EOS 750d DLSR with a 15-45mm lens and LED light panels for better illumination. Imaging each fish took about 30 seconds (including handling time), processing in phenopype up to 60 seconds per image. 
+
+Try with these instructions from [Hudson et al. 2023](https://onlinelibrary.wiley.com/doi/full/10.1111/jeb.14194) and see how long it takes you to annotate the three images in the data folder:
 
 ```{figure} hudson-et-al_SI_landmarks.jpg
 :width: 500px

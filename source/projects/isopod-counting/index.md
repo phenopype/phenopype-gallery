@@ -28,7 +28,7 @@ Details about the imaging gear and protocol can be found a [blog entry on my per
 :gutter: 2
 
 :::{grid-item-card} Jupyter notebook
-:link: jupyter-notebook
+:link: jupyter-notebook-1
 Read a static html render of a jupyter notebook
 :::
 

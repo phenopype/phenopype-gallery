@@ -1,10 +1,22 @@
 # phenopype gallery
 
-Check out the projects below to get a feeling for which sort of image analysis problems can be tackled with phenopype: either run the code yourself (follow the provided instructions) or just check out the read only html version of the notebooks. If you found a bug in the package or any of these materials, please [raise an issue](https://github.com/phenopype/phenopype/issues) in the main phenopype repo on GitHub. 
+Welcome to the phenopype gallery! It's purpose is to showcase a range of image-analysis-problems that can be solved with phenopype. To get started, read the general [instructions](instructions), then check out the projects below: each project comes with a jupyter notebook, and some toy data to reproduce the shown results. Data and code are available for download, and as read-only html version. 
 
-✨ -> AI-enabled projects
+If you found a bug in the package or any of these materials, please report it through the [issue tracker](https://github.com/phenopype/phenopype/issues) in the main phenopype repo on GitHub.
+
+::::{grid} 3
+::::{grid-item}
+:::{card}
+**✨ = AI-enabled projects**
+:::
+:::
+::::
+
+
 
 ---
+
+# Projects
 
 ## Labeling
 

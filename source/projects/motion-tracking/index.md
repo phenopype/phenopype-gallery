@@ -12,9 +12,22 @@ Use the motion tracking module of phenopype to record movement of a prey populat
 
 ## Background
 
-This example features analysis of predator-prey interactions of one threespine stickleback (*Gasterosteus aculeatus*) and 20 benthic isopods (*Asellus aquaticus*). The goal is to extract movement trajectories of both species in response to each other, to see if isopods are reacting to the fish, and the other way round. At the same time, isopod pigmentation is measured in every frame to measure whether the fish has preferences for a particular phenotype (dark vs. light pigmentation, large bodied individuals).
+This example features analysis of predator-prey interactions of one threespine stickleback (*Gasterosteus aculeatus*) and 20 benthic isopods (*Asellus aquaticus*). The goal is to extract movement trajectories of both species in response to each other, to see if isopods are reacting to the fish, and the other way round. At the same time, isopod pigmentation is measured in every frame to measure whether the fish has preferences for a particular phenotype (dark vs. light pigmentation, large bodied individuals). An animation of all detected trajectories with the given settings can be found on vimeo: 
 
-The full video can be found here: https://vimeo.com/283075068
+```{vimeo} 283075068
+:align: center
+```
+<https://vimeo.com/283075068>
+
+The workflow with videos is a bit different than for images: 
+
+1. Create `motion_tracker` class
+2. Tie in a video stream
+3. Attach a `tracking_method` (in this case, one for isopods and one for the fish)
+4. Set global detection settings
+5. Run tracking (watch it or go drink a coffee)
+6. Extract the coordinates of the detection, and use [trackpy](https://soft-matter.github.io/trackpy) to calculate the trajectories
+
 
 ## Jupyter notebooks
 

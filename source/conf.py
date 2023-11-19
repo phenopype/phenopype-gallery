@@ -15,10 +15,11 @@ author = 'Moritz Lürig'
 extensions = [
     # 'myst_parser',
     # 'nbsphinx',
-    'myst_nb',
-    'sphinx_design',
+    "myst_nb",
+    "sphinx_design",
     "sphinx_copybutton",
-    'sphinxemoji.sphinxemoji',
+    "sphinxemoji.sphinxemoji",
+    "sphinxcontrib.youtube"
 
 ]
 
