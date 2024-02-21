@@ -5,7 +5,7 @@ if (window.location.pathname.endsWith('/') === false) {
 			window.location.pathname + '/' + 
 			window.location.search;
 	window.history.replaceState(null, document.title, url);
-	window.location.reload();
+	window.location.reload(true);
 }
 
  function download_file(filelink) {
