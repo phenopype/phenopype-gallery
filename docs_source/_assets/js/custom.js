@@ -1,14 +1,11 @@
-function add_trailing_slash() {
-	
-    //If there is no trailing shash after the path in the url add it
-    if (window.location.pathname.endsWith('/') === false) {
-        var url = window.location.protocol + '//' + 
-                window.location.host + 
-                window.location.pathname + '/' + 
-                window.location.search;
 
-        window.history.replaceState(null, document.title, url);
-    }
+if (window.location.pathname.endsWith('/') === false) {
+	var url = window.location.protocol + '//' + 
+			window.location.host + 
+			window.location.pathname + '/' + 
+			window.location.search;
+
+	window.history.replaceState(null, document.title, url);
 }
 
  function download_file(filelink) {
