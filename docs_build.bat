@@ -25,7 +25,7 @@ if "%*"=="-p4" (
 	python deploy.py --find-notebooks True --upload-gdrive-ow True
 )
 
-sphinx-build -a source docs 
+sphinx-build -a docs_source docs 
 
 if "%*"=="-o" (
 	cd docs

@@ -16,6 +16,8 @@ This example demonstrates how fish teeth are segmented from the background extra
 	- ~~pip install -r requirements.txt~~ (not needed if torch is installed separately, which I strongly recommend - see below)
 	- install torch - go to [the pytorch homepage](https://pytorch.org/get-started/locally/) and follow the instructions
 	- install CLIP: `pip install git+https://github.com/openai/CLIP.git`
+	- install ultralytics: `pip install ultralytics==8.0.120`
+	- reinstall phenopype (required after installing ultralytics): `pip install --force phenopype`
 
 
 

@@ -23,8 +23,8 @@ from pydrive.auth import GoogleAuth
 
 ## set paths
 git_root_dir = "D:\git-repos\phenopype\phenopype-gallery"
-git_project_dir = os.path.join(git_root_dir, r"source\projects")
-git_asset_dir = os.path.join(git_root_dir, r"source\projects\_assets")
+git_project_dir = os.path.join(git_root_dir, r"docs_source\projects")
+git_asset_dir = os.path.join(git_root_dir, r"docs_source\projects\_assets")
 
 exec_root_dir = "D:\science\packages\phenopype\phenopype-gallery_exec"
 exec_notebook_dir = os.path.join(exec_root_dir, "notebooks")

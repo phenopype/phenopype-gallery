@@ -174,8 +174,10 @@ Tracking of individuals from videos with a static background
 
 
 ```{toctree}
+:maxdepth: 1
 :caption: Internal links
 :hidden:
+
 instructions
 projects/index
 sandbox/index
