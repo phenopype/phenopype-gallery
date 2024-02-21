@@ -26,7 +26,7 @@ Add text labels for classes and IDs to whole images and objects within
 :gutter: 2
 
 :::{grid-item-card} ID tags
-:link: projects/id-tags/
+:link: projects/id-tags/index
 :img-top: _assets/images/thumbs/id-tags.jpg
 
 - rapid manual labeling of IDs
@@ -175,8 +175,8 @@ Tracking of individuals from videos with a static background
 
 ```{toctree}
 :maxdepth: 1
-:caption: Internal links
 :hidden:
+:caption: Internal links
 
 instructions
 projects/index

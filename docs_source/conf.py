@@ -53,7 +53,7 @@ pygments_style = 'sphinx'
 
 # -- Options for HTML output -------------------------------------------------
 
-html_baseurl = 'https://www.phenopype.org/gallery/'
+# html_baseurl = 'https://www.phenopype.org/gallery/'
 html_logo = "../../phenopype/assets/phenopype_logo.png"
 html_theme = "furo"
 html_show_sourcelink = True
@@ -66,6 +66,6 @@ templates_path = ["_templates"]
 html_theme_options = {
     "source_repository": "https://github.com/phenopype/phenopype-gallery",
     "source_branch": "main",
-    "source_directory": "source",
+    "source_directory": "docs_source",
 }
 
