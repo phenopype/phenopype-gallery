@@ -5,20 +5,19 @@ import sys
 
 sys.path.insert(0, os.path.abspath('../../'))
 
+# -- Project information -----------------------------------------------------
+
 project = 'phenopype-gallery'
 copyright = 'Moritz Lürig'
 author = 'Moritz Lürig'
 
-
 # -- General configuration ---------------------------------------------------
 
 extensions = [
-    # 'myst_parser',
-    # 'nbsphinx',
-    "myst_nb",
-    "sphinx_design",
-    "sphinx_copybutton",
-    "sphinxemoji.sphinxemoji",
+    'myst_nb',
+    'sphinx_design',
+    'sphinx_copybutton',
+    'sphinxemoji.sphinxemoji',
     "sphinxcontrib.youtube"
 
 ]
@@ -28,7 +27,6 @@ myst_enable_extensions = [
     "colon_fence",
     "strikethrough",
 ]
-
 sphinxemoji_style = 'twemoji'
 sphinxemoji_source = 'https://unpkg.com/twemoji@latest/dist/twemoji.min.js'
 
@@ -37,11 +35,10 @@ nb_execution_mode = "off"
 nb_remove_code_outputs = True
 
 master_doc = 'index'
-
 # language = "english"
 
 exclude_patterns = [
-    "source/projects/_assets/md*" # include not working yet by jupyterlab_myst
+    "source/projects/_assets/md*",  # include not working yet by jupyterlab_myst
     ".ipynb_checkpoints", 
     "README.md", 
     "conf.py", 
@@ -51,7 +48,7 @@ exclude_patterns = [
 
 pygments_style = 'sphinx'
 
-# -- Options for HTML output -------------------------------------------------
+# -- HTML configuration ---------------------------------------------------
 
 # html_baseurl = 'https://www.phenopype.org/gallery/'
 html_logo = "../../phenopype/assets/phenopype_logo.png"
@@ -68,4 +65,3 @@ html_theme_options = {
     "source_branch": "main",
     "source_directory": "docs_source",
 }
-
